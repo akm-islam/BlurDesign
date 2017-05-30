@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity"
+    android:background="#ffffff"
+    >
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="ANDROID"
+        android:textSize="100dp"
+        android:textStyle="bold"
+        android:textColor="#ff0000"
+        android:gravity="center"
+        />
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:id="@+id/rb_none"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No blur"
+            />
+        <RadioButton
+            android:id="@+id/rb_inner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inner blur"
+            />
+        <RadioButton
+            android:id="@+id/rb_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Normal blur"
+            />
+        <RadioButton
+            android:id="@+id/rb_outer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Outer blur"
+            />
+        <RadioButton
+            android:id="@+id/rb_solid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Solid blur"
+            />
+    </RadioGroup>
+</RelativeLayout>
